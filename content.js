@@ -52,3 +52,10 @@ Array.prototype.forEach.call(document.querySelectorAll("div.other ul.dropdown-me
     }, true);  
   }
 });
+
+// FEATURE: All author entries about title.
+var title = document.getElementById("title") ? document.getElementById("title").textContent.trim() : null;
+
+Array.prototype.forEach.call(document.querySelectorAll("div.info .entry-author"), function(el, i){
+    el.insertAdjacentHTML('afterend', '<a class="entry-author" title="Yazarın bu başlıktaki düşünceleri" href="https://eksisozluk.com/?q=' + title + '/@' + el.textContent +'">[^]</a>')
+});
