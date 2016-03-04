@@ -24,7 +24,7 @@ function initTrollSequence(author, entryLink) {
             author,
             $(data).find('#user-note-form input').first().val(),
             $(data).find('#user-note').first().text(),
-            "(bkz: #" + getEntryId + ")"
+            "troll entrysi (bkz: #" + getEntryId + ")"
         );
         }
     },
