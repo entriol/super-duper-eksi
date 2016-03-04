@@ -59,3 +59,14 @@ var title = document.getElementById("title") ? document.getElementById("title").
 Array.prototype.forEach.call(document.querySelectorAll("div.info .entry-author"), function(el, i){
     el.insertAdjacentHTML('afterend', '<a class="entry-author" title="Yazarın bu başlıktaki düşünceleri" href="https://eksisozluk.com/?q=' + title + '/@' + el.textContent +'">[^]</a>')
 });
+
+// FEATURE: If title is about a dictionary writer, then add link to profile.
+$.ajax({
+    type: "GET",
+    url: "https://eksisozluk.com/biri/"+ title,
+    complete: function(xhr, textStatus) {
+        if (xhr.status === 200 && document.getElementById("topic")) {
+            document.getElementById('aside').insertAdjacentHTML('beforebegin', '<h2><a href="https://eksisozluk.com/biri/'+title+'">yazar profili</a></h2>');
+        }
+    }
+});
