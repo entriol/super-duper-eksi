@@ -8,5 +8,5 @@ Ekşi Sözlük'teki eksik özellikleri tamamlayan bir eklenti.
 - Bir yazarın başlıkta yazdığı entryleri hızlıca görebilmek için kısayol bağlantısı.
 - Eğer başlık aynı zamanda bir sözlük yazarına aitse, sağ sütunda yazar profiline bağlantı.
 
-[Chrome Store](https://chrome.google.com/webstore/detail/caeepagpkjoocodphbnhpoekhojglggd)
+[Chrome Store](https://chrome.google.com/webstore/detail/cghpmfaamkmfolaalbfjnjilknkhiacn)
 Chrome mağazasındaki sürüm muhtemelen oldukça geriden takip ederek güncellenecektir.
